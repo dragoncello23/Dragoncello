@@ -1,0 +1,5 @@
+/* Regole per l'immagine */
+img {
+    max-width: 100%; /* Imposta la larghezza massima al 100% della larghezza del contenitore */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+}
