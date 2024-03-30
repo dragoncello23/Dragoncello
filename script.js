@@ -2,7 +2,7 @@ function redirectToPage(pageURL) {
     window.location.href = pageURL;
 }
 document.getElementById("copy-button").addEventListener("click", function() {
-    var iframeText = document.getElementById("my-iframe").outerHTML;
+    var iframeText = '<iframe src="https://www.il-tuo-sito.com" width="600" height="400" frameborder="0"></iframe>';
     copyTextToClipboard(iframeText);
 });
 
