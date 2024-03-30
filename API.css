@@ -119,6 +119,12 @@ div {
 .knowledge-item {
     transition: transform 0.2s ease-in-out;
 }
+
+
+.knowledge-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 #iframe-container {
     position: relative;
     max-width: 600px;
@@ -144,8 +150,3 @@ div {
     transition: top 0.5s ease-in-out;
 }
 
-
-.knowledge-item:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
