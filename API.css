@@ -119,6 +119,31 @@ div {
 .knowledge-item {
     transition: transform 0.2s ease-in-out;
 }
+#iframe-container {
+    position: relative;
+    max-width: 600px;
+}
+
+#copy-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#copy-status {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00ff00;
+    color: #fff;
+    padding: 10px;
+    display: none;
+    transition: top 0.5s ease-in-out;
+}
+
 
 .knowledge-item:hover {
     transform: scale(1.05);
