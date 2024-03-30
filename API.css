@@ -133,8 +133,8 @@ div {
 
 #copy-button {
     position: fixed;
-    top: 60px; /* Regola l'altezza desiderata */
-    right: 60px; /* Regola la distanza dal margine destro */
+    top: 0; /* Regola l'altezza desiderata */
+    right: 20px; /* Regola la distanza dal margine destro */
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -144,7 +144,7 @@ div {
 
 #copy-status {
     position: absolute;
-    top: 0;
+    top: 50;
     left: 50%;
     transform: translateX(-50%);
     background-color: #00ff00;
