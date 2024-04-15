@@ -15,3 +15,19 @@ function copyTextToClipboard(text) {
         }, 5000); // Nasconde la notifica dopo 5 secondi
     });
 }
+ window.onload = function() {
+            // Apriamo una finestra pop-up
+            var popup = window.open('', 'popup', 'width=400,height=200');
+            
+            // Aggiungiamo del contenuto alla finestra pop-up
+            popup.document.write('<h2>Finestra Pop-up</h2>');
+            popup.document.write('<p>Contenuto della finestra pop-up</p>');
+            
+            // Aggiungiamo un bottone per chiudere la finestra pop-up
+            popup.document.write('<button onclick="chiudiPopup()">Chiudi</button>');
+        };
+        
+        function chiudiPopup() {
+            // Chiudiamo la finestra pop-up
+            window.close();
+        }
