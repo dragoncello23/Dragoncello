@@ -6,6 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragoncello portfoglio</title>
     <link rel="stylesheet" href="stile.css">
+    <style>
+      /* Stile per il contenitore del blocco */
+      .popup-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      
+      /* Stile per il blocco */
+      .popup {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+      }
+      
+      /* Stile per il pulsante di chiusura */
+      .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
 </head>
 <body>
 
