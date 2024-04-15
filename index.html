@@ -83,6 +83,27 @@
 </footer>
 
 <script src="script.js"></script>
-
+<div class="popup-container" id="popup-container">
+      <!-- Blocco -->
+      <div class="popup">
+        <h2>Termini per il portfoglio by Dragoncello</h2>
+        <p></p>
+        
+        
+        <button class="popup-close" onclick="closePopup()">Chiudi</button>
+      </div>
+    </div>
+    
+    <script>
+      // Funzione per chiudere il blocco
+      function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+      }
+      
+      // Apertura del blocco all'avvio della pagina
+      window.onload = function() {
+        document.getElementById("popup-container").style.display = "flex";
+      }
+    </script>
 </body>
 </html>
