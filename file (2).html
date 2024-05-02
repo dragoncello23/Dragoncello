@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting VPS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .vps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .vps-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .vps-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .vps-card:hover {
+            transform: translateY(-5px);
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvenuto su Hosting VPS</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Caratteristiche</a>
+        <a href="#pricing">Prezzi</a>
+        <a href="#contact">Contattaci</a>
+    </nav>
+    <section id="home">
+        <h1>Hosting VPS</h1>
+        <p>Benvenuti nel miglior servizio di hosting VPS. Offriamo prestazioni affidabili e scalabili per le tue esigenze di hosting.</p>
+    </section>
+    <section id="features">
+        <h1>Caratteristiche</h1>
+        <ul>
+            <li>Alta affidabilità</li>
+            <li>Prestazioni elevate</li>
+            <li>Scalabilità flessibile</li>
+            <li>Supporto tecnico 24/7</li>
+        </ul>
+    </section>
+    <section id="pricing">
+        <h1>Prezzi</h1>
+        <p>I nostri piani di hosting VPS sono convenienti e adatti a tutte le dimensioni di business.</p>
+        <p>Contattaci per ulteriori dettagli sui prezzi.</p>
+    </section>
+    <section id="vps">
+        <h1>Le nostre VPS</h1>
+        <div class="vps-container">
+            <div class="vps-card" onclick="showPrice('VPS 1', '8.99')">
+                <img src="vps1.jpg" alt="VPS 1">
+                <h2>VPS 1</h2>
+                <ul>
+                    <li>8 GB RAM</li>
+                    <li>HardDisk 100 GB</li>
+                    <li>4 CPU Core</li>
+                    <li>CPU AMD Radeon</li>
+                </ul>
+            </div>
+            <div class="vps-card" onclick="showPrice('VPS 2', '15.99')">
+                <img src="vps2.jpg" alt="VPS 2">
+                <h2>VPS 2</h2>
+                <ul>
+                    <li>8 GB RAM</li>
+                    <li>M.2 SSD</li>
+                    <li>4 CPU Core</li>
+                    <li>CPU Broadcom BCM2712 quad-core Arm Cortex A76 processor @ 2.4GHz,</li>
+                </ul>
+            </div>
+            <!-- Add more VPS cards as needed -->
+        </div>
+        <div id="price" class="price" style="display: none;"></div>
+    </section>
+    <section id="contact">
+        <h1>Contattaci</h1>
+        <p>Hai domande? Non esitare a contattarci.</p>
+        <p>Email Venditore: damicogabriel292@gmail.com</p>
+        <p>Telefono: 123-456-7890</p>
+    </section>
+    <script>
+        function showPrice(name, price) {
+            var priceElement = document.getElementById("price");
+            priceElement.innerHTML = "Prezzo di " + name + ": " + price + "€/mese";
+            priceElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
