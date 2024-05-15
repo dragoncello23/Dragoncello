@@ -28,9 +28,66 @@
 
         
             <h2>Chi Sono</h2>
-            <p>Benvenuti nella mia pagina "About". Sono Dragoncello, un appassionato web developer con esperienza in diversi linguaggi di programmazione.</p>
-            <p>Mi piace creare siti web interattivi e dinamici.</p>
-            <p>Sono sempre alla ricerca di nuove sfide e opportunità per espandere le mie conoscenze e migliorare le mie abilità nel campo dello sviluppo web.</p>
+            <p><mark>Per fare in modo che un URL personalizzato come dsc.astrofire.it reindirizzi all'invito Discord discord.gg/invite/astrofire, dovrai configurare un reindirizzamento DNS o un reindirizzamento a livello di server web. Di seguito ti spiego come puoi farlo utilizzando un record CNAME (per il DNS) e configurando un server web come Nginx o Apache.
+
+Opzione 1: Configurazione del Reindirizzamento DNS
+Un record CNAME può essere utilizzato per puntare dsc.astrofire.it a discord.gg. Tuttavia, questo metodo può non essere sempre supportato o potrebbe non funzionare come previsto, perché discord.gg potrebbe non gestire il routing correttamente per sottodomini personalizzati.
+
+Opzione 2: Configurazione del Reindirizzamento con un Server Web
+Per una soluzione più robusta, puoi configurare un server web per gestire il reindirizzamento.
+
+Utilizzando Nginx
+Installa Nginx sul tuo server (se non è già installato).
+Configura un nuovo server block in Nginx per gestire il reindirizzamento.
+Ecco un esempio di configurazione di un server block per Nginx:
+
+nginx
+Copia codice
+server {
+    listen 80;
+    server_name dsc.astrofire.it;
+
+    location / {
+        return 301 https://discord.gg/invite/astrofire;
+    }
+}
+Salva la configurazione e riavvia Nginx:
+bash
+Copia codice
+sudo systemctl restart nginx
+Utilizzando Apache
+Installa Apache sul tuo server (se non è già installato).
+Configura un nuovo VirtualHost in Apache per gestire il reindirizzamento.
+Ecco un esempio di configurazione di un VirtualHost per Apache:
+
+apache
+Copia codice
+<VirtualHost *:80>
+    ServerName dsc.astrofire.it
+
+    Redirect 301 / https://discord.gg/invite/astrofire
+</VirtualHost>
+Salva la configurazione e riavvia Apache:
+bash
+Copia codice
+sudo systemctl restart apache2
+Configurazione DNS
+Indipendentemente dal metodo scelto, dovrai configurare i tuoi DNS per puntare dsc.astrofire.it al tuo server.
+
+Aggiungi un record A nel tuo pannello di controllo DNS per dsc.astrofire.it che punti all'indirizzo IP del tuo server web.
+Esempio di configurazione DNS:
+
+makefile
+Copia codice
+Type: A
+Name: dsc
+Value: [IP del tuo server web]
+TTL: Automatico
+Verifica
+Una volta configurato, visitando dsc.astrofire.it dovrebbe reindirizzare automaticamente a https://discord.gg/invite/astrofire.
+
+Questa configurazione garantirà che il reindirizzamento funzioni correttamente e fornirà un URL personalizzato e più facile da ricordare per invitare gli utenti al tuo server Discord.</mark></p>
+            
   
     
     
