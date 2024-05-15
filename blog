@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragoncello portfoglio About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="API.html">API</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main style="background-color: #00eeff63; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+
+        
+        
+
+        
+            <h2>Chi Sono</h2>
+            <p>Benvenuti nella mia pagina "About". Sono Dragoncello, un appassionato web developer con esperienza in diversi linguaggi di programmazione.</p>
+            <p>Mi piace creare siti web interattivi e dinamici.</p>
+            <p>Sono sempre alla ricerca di nuove sfide e opportunità per espandere le mie conoscenze e migliorare le mie abilità nel campo dello sviluppo web.</p>
+  
+    
+    
+    
+    
+</main>
+
+<footer>
+    <p>&copy; 2024 Dragoncello Portfoglio</p>
+     <div class="GitHub-item">
+        <a href="https://github.com/dragoncello23" target="_blank">
+            <div class="icon">
+                <img src="immagini/github_icon.png" alt="GitHub Icon">
+            </div>
+</footer>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/a12a7da3-434d-4bda-bd3c-0956dfc06afa/webchat/config.js" defer></script>
+<script src="script.js"></script>
+
+</body>
+</html>
